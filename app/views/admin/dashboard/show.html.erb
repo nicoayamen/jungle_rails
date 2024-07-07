@@ -1,2 +1,16 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Admin: Dashboard</h1>
+
+<h4>Total Products: 
+  <small class="text-muted"><%= @total_products %></small>
+</h4>
+
+<h4>Total Categories:
+  <small class="text-muted"><%= @total_categories %></small>
+</h4>
+
+<div>
+  <%= link_to "View All Products", [:admin, :products], class: "link-success"%>
+</div>
+<div>
+  <%= link_to "Home Page", root_path, class: "link-success"%>
+</div>
